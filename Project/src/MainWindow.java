@@ -30,7 +30,7 @@ public class MainWindow extends JFrame implements ActionListener
 	{
 		if(e.getSource().equals(theSignupButton))
 		{
-			new CreateWindow();
+			new SignupWindow();
 		}
 		
 		else if(e.getSource().equals(theSigninButton))

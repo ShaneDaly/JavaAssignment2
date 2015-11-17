@@ -1,3 +1,4 @@
+
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -5,21 +6,22 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 
-public class CreateWindow extends JFrame implements ActionListener
+public class SignupWindow extends JFrame implements ActionListener
 {
 	private JTextField u = new JTextField();
 	private JLabel username = new JLabel("Username:");
-	private JTextField p = new JTextField();
+	private JPasswordField p = new JPasswordField();
 	private JLabel password = new JLabel("Password:");
 	private JButton theOKButton = new JButton("Ok");
 	private JButton theCancelButton = new JButton("Cancel");
     static String un;
     static String pw;
 	
-	public CreateWindow()
+	public SignupWindow()
 	{
 		super("SignUp");
 		getContentPane().setLayout(new GridLayout(3,1));
